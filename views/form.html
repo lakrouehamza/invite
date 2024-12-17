@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com "></script>
+</head>
+<body>
+    <div class="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase">
+            Book an Appointment
+        </div>
+        <form action="#" method="POST" class="space-y-6">
+            <!-- Titre de l'invitation -->
+            <div>
+              <label for="title" class="block text-sm font-medium text-gray-700">Titre de l'invitation</label>
+              <input type="text" id="title" name="title" placeholder="Exemple : Vous êtes invités au mariage de..." 
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+      
+            <!-- Noms des mariés -->
+            <div>
+              <label for="names" class="block text-sm font-medium text-gray-700">Noms des mariés</label>
+              <input type="text" id="names" name="names" placeholder="Exemple : Amanda & William" 
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+      
+            <!-- Lieu de l'événement -->
+            <div>
+              <label for="location" class="block text-sm font-medium text-gray-700">Lieu</label>
+              <input type="text" id="location" name="location" placeholder="Exemple : Pacific North Centre Church" 
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+      
+            <!-- Date de l'événement -->
+            <div>
+              <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+              <input type="date" id="date" name="date" 
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+      
+            <!-- Heure de l'événement -->
+            <div>
+              <label for="time" class="block text-sm font-medium text-gray-700">Heure</label>
+              <input type="time" id="time" name="time" 
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+      
+            <!-- Texte supplémentaire -->
+            <div>
+              <label for="additionalText" class="block text-sm font-medium text-gray-700">Texte supplémentaire</label>
+              <textarea id="additionalText" name="additionalText" rows="4" placeholder="Exemple : Réception à suivre..."
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+            </div>
+      
+            <!-- Bouton de soumission -->
+            <div>
+              <button type="submit" 
+                      class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Générer la carte
+              </button>
+            </div>
+          </form>
+    </div>
+</body>
+</html>
